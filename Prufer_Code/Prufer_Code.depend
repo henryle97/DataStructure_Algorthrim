@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1522911114 source:c:\users\admin\documents\github\bt_c\prufer_code\main.cpp
+	<iostream>
+	<string.h>
+	<limits>
+

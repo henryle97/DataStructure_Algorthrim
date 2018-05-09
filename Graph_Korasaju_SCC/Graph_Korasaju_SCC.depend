@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1524673296 source:/home/hisiter97/Hisiter/DataStruct_Algorthrim/Graph_Korasaju_SCC/main.cpp
+	<iostream>
+	<list>
+	<stack>
+	<fstream>
+	<vector>
+	<algorithm>
+
+1524814836 source:/home/hisiter/IT/DataStructure_Algorthrim/Graph_Korasaju_SCC/main.cpp
+	<iostream>
+	<list>
+	<stack>
+	<fstream>
+	<vector>
+	<algorithm>
+
+1525094866 source:/home/hisiter/IT_Hisiter/DataStructure_Algorthrim-master/Graph_Korasaju_SCC/main.cpp
+	<iostream>
+	<list>
+	<stack>
+	<fstream>
+	<vector>
+	<algorithm>
+	<queue>
+	<set>
+	<limits.h>
+

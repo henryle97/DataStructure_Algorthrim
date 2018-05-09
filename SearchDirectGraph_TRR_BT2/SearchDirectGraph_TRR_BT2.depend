@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1524666876 source:/home/hisiter97/Hisiter/DataStruct_Algorthrim/SearchDirectGraph_TRR_BT2/main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<stack>
+

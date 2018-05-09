@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1525864641 source:/home/hisiter/IT_Hisiter/DataStructure_Algorthrim-master/BTCD_CTDLGT/main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

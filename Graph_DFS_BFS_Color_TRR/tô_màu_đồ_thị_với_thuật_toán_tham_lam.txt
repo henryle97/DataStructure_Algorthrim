@@ -1,0 +1,104 @@
+#include <stdio.h>
+#define SIZE 100
+int i,j,m,n,k;
+int a[SIZE][2],b[SIZE]; 
+int bac[SIZE], sort[SIZE], mau[SIZE]={0};
+int color[10]={1,2,3,4,5,6,7,8,9,10};
+int input()	
+{	FILE *f;
+ 	f=fopen("dothi.txt","r");
+ 	fscanf(f, "%d%d", &m, &n);
+        for (int i = 0; i<n; i++)
+                for (int j = 0; j<2; j++)
+                        fscanf(f, "%d", &a[i][j]);
+ 	fclose(f);
+}
+void dembac(){
+	for(int k=0;k<n+1;k++){
+		for(i=0;i<n;i++){
+			for(j=0;j<2;j++){
+				if(a[i][j]==k){
+					bac[k]++;
+				}
+			}
+		}	
+	}
+	for(i=0;i<n;i++) 
+	    b[i]=i+1;
+}
+int sapxepdinh(){
+    int t,j;
+	for(i=0;i<n;i++) 
+		for(j=i+1;j<n;j++)
+		    if(bac[b[j]]<=bac[b[i]]) {
+		        t=b[i]; 
+		        b[i]=b[j];
+		        b[j]=t;
+		    }
+}
+int kiemtracanh(int d1, int d2)
+{	int ch[100][100];
+	int i,j,t;
+	for( t=0;t<n;t++){
+	    i= a[t][0];
+		j= a[t][1];
+		ch[i][j] = ch[j][i]=1;
+	}
+	if(ch[d1][d2]==1) 
+	    return 1;
+	else return 0;
+}		
+int ganmau(){	
+    int j;
+	for(i=0;i<n;i++) 
+		for(j=0;j<i;j++){
+		    int m=mau[b[i]];
+			if(kiemtracanh(b[i],b[j])==1 && mau[b[j]]==m)
+			    mau[b[i]] = m+1;
+			else mau[b[i]] = m;
+		}
+}	
+int output()
+{	 FILE *fp;
+   fp = fopen("dothi.dot", "w+");
+	fprintf(fp,"graph dothi \n\n {\n\n");
+	for(i=0;i<n;i++)
+	{	fprintf(fp,"%d",b[i]);
+		fprintf(fp,"\t");
+		if(color[mau[b[i]]]==1){
+		fprintf(fp,"[fillcolor = red, style = filled]\n\n");}
+		if(color[mau[b[i]]]==2){
+		fprintf(fp,"[fillcolor = blue, style = filled]\n\n");}
+		if(color[mau[b[i]]]==3){
+		fprintf(fp,"[fillcolor = green, style = filled]\n\n");}
+		if(color[mau[b[i]]]==4){
+		fprintf(fp,"[fillcolor = orange, style = filled]\n\n");}
+		if(color[mau[b[i]]]==5){
+		fprintf(fp,"[fillcolor = pink, style = filled]\n\n");}
+		if(color[mau[b[i]]]==6){
+		fprintf(fp,"[fillcolor = yellow, style = filled]\n\n");}
+		if(color[mau[b[i]]]==7){
+		fprintf(fp,"[fillcolor = black, style = filled]\n\n");}
+		if(color[mau[b[i]]]==8){
+		fprintf(fp,"[fillcolor = blue, style = filled]\n\n");}
+		if(color[mau[b[i]]]==9){
+		fprintf(fp,"[fillcolor = brown, style = filled]\n\n");}
+		if(color[mau[b[i]]]==10){
+		fprintf(fp,"[fillcolor = white, style = filled]\n\n");}
+	}
+	for(i=0;i<n;i++)
+	    fprintf(fp,"%d -- %d\n\n",a[i][0],a[i][1]);
+	    fprintf(fp,"\n");
+	    fprintf(fp,"}");
+	fclose(fp);
+}
+			
+int main()
+{
+	input();
+	dembac();
+	sapxepdinh();
+	int kiemtracanh(int d1,int d2);
+	ganmau();
+	output();
+}

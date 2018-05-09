@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1522553872 source:c:\users\admin\documents\github\bt_c\x\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<stack>
+	<windows.h>
+
+1522553872 source:c:\users\admin\documents\github\bt_c\graph_setup_trr\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<stack>
+	<windows.h>
+
+1522553872 source:c:\users\admin\documents\github\bt_c\graph_dfs_bfs_color_trr\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<stack>
+	<windows.h>
+

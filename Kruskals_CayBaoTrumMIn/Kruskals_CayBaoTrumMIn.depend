@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1525148475 source:/home/hisiter/IT_Hisiter/DataStructure_Algorthrim-master/Kruskals_CayBaoTrumMIn/main.cpp
+	<iostream>
+	<algorithm>
+

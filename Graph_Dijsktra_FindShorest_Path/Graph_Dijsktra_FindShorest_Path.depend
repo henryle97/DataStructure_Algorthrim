@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1525060268 source:/home/hisiter/IT_Hisiter/DataStructure_Algorthrim-master/Graph_Dijsktra_FindShorest_Path/main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<list>
+	<stack>
+	<limits.h>
+

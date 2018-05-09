@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1523624889 source:c:\users\admin\documents\github\bt_c\map_in_c++\main.cpp
+	<iostream>
+	<map>
+	<iterator>
+

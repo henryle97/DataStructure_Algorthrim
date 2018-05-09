@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1523611490 source:c:\users\admin\documents\github\bt_c\tomau_graph_trr\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<stack>
+	<fstream>
+

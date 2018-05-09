@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1524407386 source:/home/hisiter97/Hisiter/DataStruct_Algorthrim/NearestNeightBour_KDTree/main.cpp
+	<iostream>
+	<math.h>
+	<algorithm>
+
