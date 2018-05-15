@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hisiter/CLionProjects/Graph/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+list
+-
+unordered_map
+-
+unordered_set
+-
+stack
+-
+
