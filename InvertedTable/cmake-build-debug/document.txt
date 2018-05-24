@@ -1,0 +1,5 @@
+These classes are derived directly.
+or indirectly from the classes?
+istream and ostream.
+Searches the string for the first character that matches any of the characters specified in its arguments.
+When pos is specified, the search only includes characters at or after position pos, ignoring any possible occurrences before pos.

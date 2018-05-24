@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hisiter/CLionProjects/InvertedTable/main.cpp
+iostream
+-
+fstream
+-
+unordered_map
+-
+list
+-
+string
+-
+sstream
+-
+algorithm
+-
+
